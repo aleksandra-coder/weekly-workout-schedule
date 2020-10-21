@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_form.css" />    
+   
+    <title>Stay Fit!</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4">
+        <span>STAY FIT WITH OUR</span>
+        <span class="right-heading">WEEKLY WORKOUT!</span> 
+      </h1>
+      <p class="lead">=> Stay fit, energized and healthy following our schedule with varieties of sport activities.</p>
+      
+      <p class="lead">=> We chose activity for a given day, you choose how long you are going to practice. There is also a rest day for recovering.</p>
+      
+    </div>
+    
+    <div class="container-fluid">
+
+    <div class="table-responsive">
+
+    <table class="table table-striped">
+      <thead>
+        <tr class="big-header">
+          <th scope="col">Day of the week/<br>Week</th>
+          <th scope="col">Monday</th>
+          <th scope="col">Tuesday</th>
+          <th scope="col">Wednesday</th>
+          <th scope="col">Thursday</th>
+          <th scope="col">Friday</th>
+          <th scope="col">Saturday</th>
+          <th scope="col">Sunday</th>
+          <th scope="col">Weekly Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Week 1</th>
+          <td>
+            <label name="Yoga" onmouseover="showImage('yoga.jpeg');" onmouseout="hideImage();">Yoga</label>
+            <div class="custom-control custom-checkbox mr-sm-2" >
+              <form name="resultBox" action="#" onsubmit="return validateForm();">          
+                <input type="number" class="form-control small-input" name="inputTime" id="inputTime1" placeholder="Minutes">            
+              </form>
+            </div>
+          </td>
+          
+          <td>
+            <label name="Running" onmouseover="showImage('running.jpg');" onmouseout="hideImage();">Running</label>
+              <div class="custom-control custom-checkbox mr-sm-2" >
+                <form name="resultBox" action="#" onsubmit="return validateForm();"> 
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime2" placeholder="Minutes">
+            
+        </form>
+        </div>
+          </td>
+          <td>
+            <label name="Swimming" onmouseover="showImage('swimming.jpg');" onmouseout="hideImage();">Swimming</label>
+              <div class="custom-control custom-checkbox mr-sm-2" >
+                <form name="resultBox" action="#" onsubmit="return validateForm();">              
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime3" placeholder="Minutes">
+                </form>
+              </div>
+          </td>
+          
+          <td>
+            <label name="Biking" onmouseover="showImage('biking.jpg');" onmouseout="hideImage();">Biking</label>
+              <div class="custom-control custom-checkbox mr-sm-2" >
+                <form name="resultBox" action="#" onsubmit="return validateForm();">
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime4" placeholder="Minutes">
+                </form>
+              </div>
+          </td>
+          
+          <td>
+            <label name="Gym" onmouseover="showImage('gym.jpg');" onmouseout="hideImage();">Gym</label>
+              <div class="custom-control custom-checkbox mr-sm-2" >
+                <form name="resultBox" action="#" onsubmit="return validateForm();">
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime5" placeholder="Minutes">
+                </form>
+              </div>
+          </td>
+
+          <td class="rest-day">Rest Day<br>
+            You're doing great!
+          </td>
+          <td>
+            <label name="Long Run" onmouseover="showImage('longrun.jpg');" onmouseout="hideImage();">Long Run</label>
+              <div class="custom-control custom-checkbox mr-sm-2" >
+                <form name="resultBox" action="#" onsubmit="return validateForm();">
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime6" placeholder="Minutes">
+                </form>
+              </div>
+          </td>
+          
+          <td>All activities 
+            <div class="custom-sum"> 
+              <form name="resultBox" action="#" onsubmit="return validateForm();">  
+                <p id="week1" name="week1" placeholder="Minutes"></p>
+                  <button type="submit" class="btn btn-primary" onclick="add1()">Add</button>
+              </form>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">Week 2</th>
+          <td>
+            <label name="Yoga" onmouseover="showImage('yoga.jpeg');" onmouseout="hideImage();">Yoga</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();">  
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime7" placeholder="Minutes">
+                </form>
+              </div>
+          </td>
+          
+          <td>
+            <label name="Running" onmouseover="showImage('running.jpg');" onmouseout="hideImage();">Running</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();">  
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime8" placeholder="Minutes">
+                </form>
+              </div>
+          </td>
+
+          <td>
+            <label name="Swimming" onmouseover="showImage('swimming.jpg');" onmouseout="hideImage();">Swimming</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();"> 
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime9" placeholder="Minutes">
+                </form>
+              </div>
+          </td>
+          
+          <td>
+            <label name="Biking" onmouseover="showImage('biking.jpg');" onmouseout="hideImage();">Biking</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();"> 
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime10" placeholder="Minutes">
+                </form>
+              </div>
+          </td>
+          
+          <td>
+            <label name="Gym" onmouseover="showImage('gym.jpg');" onmouseout="hideImage();">Gym</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();"> 
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime11" placeholder="Minutes">
+                </form>
+              </div>
+          </td>
+          
+          <td class="rest-day">Rest Day<br>
+            Take a deep breath<br>before <br>tomorrow's run
+          </td>
+          
+          <td>
+            <label name="Long Run" onmouseover="showImage('longrun.jpg');" onmouseout="hideImage();">Long Run</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();"> 
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime12" placeholder="Minutes">
+                </form>
+              </div>
+          </td>
+          
+          <td>All activities 
+            <div class="custom-sum">
+              <form name="resultBox" action="#" onsubmit="return validateForm();">
+               <p id="week2" name="week2" placeholder="Minutes"></p>
+                <button type="submit" class="btn btn-primary" onclick="add2()">Add</button>
+              </form>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">Week 3</th>
+          <td>
+            <label name="Yoga" onmouseover="showImage('yoga.jpeg');" onmouseout="hideImage();">Yoga</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();">  
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime13" placeholder="Minutes">
+                </form>    
+              </div>
+          </td>
+          
+          <td>
+            <label name="Running" onmouseover="showImage('running.jpg');" onmouseout="hideImage();">Running</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();"> 
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime14" placeholder="Minutes">
+                </form>    
+              </div>
+          </td>
+          
+          <td>
+            <label name="Swimming" onmouseover="showImage('swimming.jpg');" onmouseout="hideImage();">Swimming</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();"> 
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime15" placeholder="Minutes">
+                </form>    
+              </div>
+          </td>
+          
+          <td>
+            <label name="Biking" onmouseover="showImage('biking.jpg');" onmouseout="hideImage();">Biking</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();"> 
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime16" placeholder="Minutes">
+                </form>    
+              </div>
+          </td>
+          
+          <td>
+            <label name="Gym" onmouseover="showImage('gym.jpg');" onmouseout="hideImage();">Gym</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();">    
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime17" placeholder="Minutes">
+                </form>    
+              </div>
+          </td>
+          
+          <td class="rest-day">Rest Day<br>You rock!<br> Keep going!  
+          </td>
+          
+          <td>
+            <label name="Long Run" onmouseover="showImage('longrun.jpg');" onmouseout="hideImage();">Long Run</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();">  
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime18" placeholder="Minutes">
+                </form>    
+              </div>
+          </td>
+          
+          <td>All activities 
+            <div class="custom-sum">
+              <form name="resultBox" action="#" onsubmit="return validateForm();">
+                <p id="week3" name="week3" placeholder="Minutes"></p>
+                  <button type="submit" class="btn btn-primary" onclick="add3()">Add</button>
+              </form>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">Week 4</th>
+          <td>
+            <label name="Yoga" onmouseover="showImage('yoga.jpeg');" onmouseout="hideImage();">Yoga</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();">  
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime19" placeholder="Minutes">
+                </form>    
+              </div>
+          </td>
+          
+          <td>
+            <label name="Running" onmouseover="showImage('running.jpg');" onmouseout="hideImage();">Running</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();">  
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime20" placeholder="Minutes">
+                </form>    
+              </div>
+          </td>
+          
+          <td>
+            <label name="Swimming" onmouseover="showImage('swimming.jpg');" onmouseout="hideImage();">Swimming</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();"> 
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime21" placeholder="Minutes">
+                </form>    
+              </div>
+          </td>
+          
+          <td>
+            <label name="Biking" onmouseover="showImage('biking.jpg');" onmouseout="hideImage();">Biking</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();">   
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime22" placeholder="Minutes">
+                </form>    
+              </div>
+          </td>
+          
+          <td>
+            <label name="Gym" onmouseover="showImage('gym.jpg');" onmouseout="hideImage();">Gym</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();">   
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime23" placeholder="Minutes">
+                </form>   
+              </div>
+          </td>
+          
+          <td class="rest-day">Rest Day<br>Did you buy champagne?<br>            
+          </td>
+          
+          <td>
+            <label name="Long Run" onmouseover="showImage('longrun.jpg');" onmouseout="hideImage();">Long Run</label>
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <form name="resultBox" action="#" onsubmit="return validateForm();">  
+                  <input type="number" class="form-control small-input" name="inputTime" id="inputTime24" placeholder="Minutes">
+                </form>    
+              </div>
+          </td>
+          
+          <td>All activities 
+            <div class="custom-sum">
+              <form name="resultBox" action="#" onsubmit="return validateForm();">
+                <p id="week4" name="week4" placeholder="Minutes"></p>
+                  <button type="submit" class="btn btn-primary" onclick="add4()">Add</button>
+              </form>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">Total of an activity</th>
+          <td>All Yoga 
+            <div class="custom-sum">
+              <p id="allYoga" name="allYoga" placeholder="Minutes"></p>
+                <button type="submit" class="btn btn-primary" onclick="yogaSum()">Add</button>
+            </div>
+          </td>
+          
+          <td>All Running 
+            <div class="custom-sum">
+              <p id="allRunning" name="allRunning" placeholder="Minutes"></p>
+                <button type="submit" class="btn btn-primary" onclick="fastRunSum()">Add</button>
+            </div>
+          </td>
+          
+          <td>All Swimming 
+            <div class="custom-sum">
+              <p id="allSwimming" name="allSwimming" placeholder="Minutes"></p>
+                <button type="submit" class="btn btn-primary" onclick="swimmingSum()">Add</button>
+            </div>
+          </td>
+          
+          <td>All Biking 
+            <div class="custom-sum">
+              <p id="allBiking" name="allBiking" placeholder="Minutes"></p>
+                <button type="submit" class="btn btn-primary" onclick="bikingSum()">Add</button>
+            </div>
+          </td>
+          
+          <td>All Gym 
+            <div class="custom-sum">
+              <p id="allGym" name="allGym" placeholder="Minutes"></p>
+                <button type="submit" class="btn btn-primary" onclick="gymSum()">Add</button>
+            </div>
+          </td>
+          
+          <td class="rest-day">All Rest Day<br> 
+            Have you enjoyed<br>all your rest days?
+          </td>
+          
+          <td>All Long Run 
+            <div class="custom-sum">
+              <p id="allLongRun" name="allLongRun" placeholder="Minutes"></p>
+                <button type="submit" class="btn btn-primary" onclick="longRunSum()">Add</button>
+            </div>
+          </td>
+          
+          <td><p1><strong class="congratulation">Congratulations!<br>You've reached your goal!</strong></p1> 
+          </td>
+
+        </tr>
+ 
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div id="popupLinkContainer">
+  <div id="popupLink"></div>
+</div>
+
+  <footer id="sticky-footer" class="py-4">
+    <div class="container number-center">
+      <small>Copyright &copy; Nguyen Nguyen &amp; Aleksandra Postola 2020 Weekly Workout Stay Fit</small>
+    </div>
+  </footer>
+    <!-- Optional JavaScript -->
+    <script> </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="schedule_1.js"></script>
+  </body>
+</html>

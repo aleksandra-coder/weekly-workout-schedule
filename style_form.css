@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  margin-top: -68px;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+table,
+th,
+td {
+  border: 3px double rgb(77, 124, 124);
+}
+
+body {
+  background-color: rgb(55, 92, 92);
+}
+
+caption {
+  font-size: 48px;
+  color: darkslategray;
+}
+
+input {
+  margin-bottom: 4%;
+}
+
+input[type="radio"] {
+  width: 10%;
+}
+
+label {
+  width: 30%;
+}
+
+textarea {
+  width: 100%;
+}
+
+#table-form {
+  border: none;
+  width: 100%;
+}
+
+#table-form td {
+  border: none;
+}
+
+.left-column {
+  width: 20%;
+}
+
+.right-column {
+  width: 40%;
+}
+caption {
+  font-size: 40px;
+}
+
+footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  color: darkolivegreen;
+}
+
+h1 {
+  border-width: thick;
+  text-align: left;
+  color: rgb(63, 80, 34);
+  font-style: italic;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+.custom-control {
+  padding-left: 0px;
+}
+
+.custom-control-label {
+  margin-left: 23px;
+}
+
+.jumbotron {
+  background-color: white;
+  background-image: url(fitness.jpg);
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 35%;
+  color: rgb(119, 115, 115);
+}
+
+.table {
+  color: white;
+}
+
+.right-heading {
+  float: right;
+}
+
+.small-input {
+  width: 60%;
+}
+
+p1 {
+  color: lightyellow;
+}
+
+#popupLinkContainer {
+  position: absolute;
+  top: 455px;
+  left: 560px;
+  width: 200px;
+  color: white;
+}
+
+#allYoga {
+  color: white;
+  font-size: 20px;
+}
+
+#allRunning {
+  color: white;
+  font-size: 20px;
+}
+
+#allSwimming {
+  color: white;
+  font-size: 20px;
+}
+
+#allBiking {
+  color: white;
+  font-size: 20px;
+}
+
+#allGym {
+  color: white;
+  font-size: 20px;
+}
+
+#allLongRun {
+  color: white;
+  font-size: 20px;
+}
+
+#allAllactivities {
+  color: rgb(250, 249, 236);
+  font-size: 20px;
+}
+
+#week1 {
+  color: rgb(170, 170, 201);
+  font-size: 20px;
+}
+
+#week2 {
+  color: rgb(170, 170, 201);
+  font-size: 20px;
+}
+
+#week3 {
+  color: rgb(170, 170, 201);
+  font-size: 20px;
+}
+
+#week4 {
+  color: rgb(170, 170, 201);
+  font-size: 20px;
+}
+
+.big-header {
+  font-size: 20px;
+  color: rgb(126, 212, 208);
+}
+
+.rest-day {
+  font-size: 15px;
+  color: rgb(98, 236, 229);
+}
+
+.congratulation {
+  color: rgb(247, 77, 77);
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
